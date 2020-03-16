@@ -1,11 +1,4 @@
 
-*{
-margin: 0;
-padding: 0;
--webkit-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
 /* Navigation */
 .justify-content-center {
    -ms-flex-pack: center!important;
@@ -45,6 +38,13 @@ a {
 }
 
 /* Flipflap */
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+  }
 
 .wrapper{
 width: 90%;
