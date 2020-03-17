@@ -1,9 +1,9 @@
 
-/* Navigation */
+/* -----------Navigation -------------- */
 .justify-content-center {
    -ms-flex-pack: center!important;
    justify-content: center!important;
-   margin-top: 3%;
+   margin-top: 1%;
 }
 
 .nav-link {
@@ -12,7 +12,7 @@
 }
 
 a {
-   color: #707070;
+   color: white;
    text-decoration: none;
    background-color: transparent;
    font-family: josefin-sans, sans-serif;
@@ -29,7 +29,40 @@ a {
    padding-left: 0;
    margin-bottom: 0;
    list-style: none;
+   background-color: #A6BFC8;
 }
+
+/*------------about me ------------ */
+
+/* image comparison slider */
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 180px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #CD9D31;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
 
 /* Hero billede */
 
@@ -37,7 +70,10 @@ a {
    width: 80%; margin: 0 10%;
 }
 
-/* Flipflap */
+
+/*------------portfolio ------------ */
+
+/* 3D vendespil */
 
 *{
   margin: 0;
@@ -198,7 +234,7 @@ margin: 0 0 2rem 0;
 }
 }
 
-/* modal  */
+/*-------------- Modal style-----------------  */
 .inner button {
    margin-top: 10%;
    border-radius: 15px;
@@ -231,8 +267,9 @@ margin: 0 0 2rem 0;
    margin: 15% auto; /* 15% from the top and centered */
    padding: 20px;
    border: 1px solid #888;
-   width: 80%; /* Could be more or less, depending on screen size */
-   height: 80vh;
+   width: 95%; /* Could be more or less, depending on screen size */
+   height: 90vh;
+   overflow: scroll;
  }
  
  /* The Close Button */
@@ -250,38 +287,192 @@ margin: 0 0 2rem 0;
    cursor: pointer;
  }
 
- /* Image Comparison Slider */
- * {box-sizing: border-box;}
+ /*-------------- Modal indhold-----------------  */
 
-.img-comp-container {
-  position: relative;
-  height: 80vh; /*should be the same height as the images*/
-  display: block;
+ .text-container{
+  font-family: josefin-sans, sans-serif; 
+  color: #A7A9AA;
+ }
+ 
+ .text-container h3 {
+    font-weight: 600;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    color: #707070;
+    
+  }
+  .text-container h4 {
+    margin-bottom: 4%;
+    color: #707070;
+  }
+
+  .text-container ul {
+    margin-left: 5%;
+  }
+
+  .img-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .img-container img {
+    width: 70%;
+    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  margin-top: 2%;
+  margin-top: 7%;
+  }
+
+
+ /*------------contact me ------------ */
+
+#contact {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #A6BFC8;
+width: 100%;
+padding-top: 10%;
+margin-top: 5%;
 }
 
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+.contact-img-container>img {
+  width: 100%;
 }
 
-.img-comp-img img {
-  display: block;
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  color: var(--text-color-dark);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 3em;
+  font-size: 0.7em;
 }
 
-.img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: #CD9D31;
-  opacity: 0.7;
-  border-radius: 50%;
+.right-contact-text>ul>li {
+  list-style-type: none;
+}
+
+.right-contact-text>ul>li>a {
+  color: white;
+}
+
+.right-contact-text {
+  text-align: left;
+  font-weight: 100;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.left-contact-text>ul>li {
+  list-style-type: none;
+  color: #5e5d5b;
+  font-size: 1.2em;
+}
+
+.left-contact-text {
+  text-align: left;
+  font-family: josefin-sans, sans-serif;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+/*------------media queries ------------ */
+@media screen and (min-width: 768px)  {
+  .img-comp-img img {
+    width: 768px ;
+    height: 400px;
+    
+  }
+  
+  .img-comp-container {
+    height: 400px; /*should be the same height as the images*/
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.right-contact-text>ul>li>a {
+  color: white;
+}
+
+.left-contact-text>ul>li {
+  list-style-type: none;
+  color: #5e5d5b;
+  line-height: 2.6em;
+}
+
+@media screen and (min-width: 1024px){
+  .img-comp-img img {
+    width: 1024px ;
+    height: 550px ;
+  }
+  
+  .img-comp-container {
+    height: 550px; /*should be the same height as the images*/
+    width: 1024px;
+    margin: 0 auto;
+  
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #contact {
+    padding-top: 3%;
+  }
+  
+  .contact-text-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+    .contact-img-container>img {
+      width: 100%;
+    }
+
+      .contact-wrapper {
+        width: 35%;
+      }
+    
+      .contact-img-container {
+        width: 25%;
+        margin-top: 0;
+        margin-bottom: 2%;
+      }
+
+}
+
+@media screen and (min-width: 1280px){
+  .img-comp-img img {
+    width: 1280px ;
+    height: 700px ;
+  }
+  
+  .img-comp-container {
+    height: 700px; /*should be the same height as the images*/
+    width: 1280px;
+    margin: 0 auto;
+  
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .img-comp-img img {
+    width: 1440px ;
+    height: 770px ;
+  }
+  
+  .img-comp-container {
+    height: 770px; /*should be the same height as the images*/
+    width: 1440px;
+    margin: 0 auto;
+  
+  }
 }

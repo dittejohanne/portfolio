@@ -78,7 +78,7 @@ function initComparisons() {
   }
 }
 
-/*-------------------- modal ---------------------*/
+/*-------------------- Modal ---------------------
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -104,6 +104,261 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+} */
+
+/*-------------------- Fridge Buddy ---------------------*/
+
+// Get the modal
+var modalFridge = document.getElementById("fridgeBuddy");
+
+// Get the button that opens the modal
+var btnFridge = document.getElementById("btnFridge");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnFridge.onclick = function() {
+  modalFridge.style.display = "block";
 }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalFridge.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalFridge) {
+    modalFridge.style.display = "none";
+  }
+}
+
+/*-------------------- Hjem Is ---------------------*/
+
+// Get the modal
+var modalHjemIs = document.getElementById("hjemIs");
+
+// Get the button that opens the modal
+var btnHjemIs = document.getElementById("btnHjemIs");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the button, open the modal
+btnHjemIs.onclick = function() {
+  modalHjemIs.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalHjemIs.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalHjemIs) {
+    modalHjemIs.style.display = "none";
+  }
+}
+
+/*-------------------- YouSee ---------------------*/
+
+// Get the modal
+var modalYousee = document.getElementById("yousee");
+
+// Get the button that opens the modal
+var btnYousee = document.getElementById("btnYousee");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[2];
+
+// When the user clicks on the button, open the modal
+btnYousee.onclick = function() {
+  modalYousee.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalYousee.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalYousee) {
+    modalYousee.style.display = "none";
+  }
+}
+
+/*-------------------- Eriksminde ---------------------*/
+
+// Get the modal
+var modalEriksminde = document.getElementById("eriksminde");
+
+// Get the button that opens the modal
+var btnEriksminde = document.getElementById("btnEriksminde");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[3];
+
+// When the user clicks on the button, open the modal
+btnEriksminde.onclick = function() {
+  modalEriksminde.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalEriksminde.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalEriksminde) {
+    modalEriksminde.style.display = "none";
+  }
+}
+
+/*-------------------- Havnebadet ---------------------*/
+
+// Get the modal
+var modalHavnebadet = document.getElementById("havnebadet");
+
+// Get the button that opens the modal
+var btnHavnebadet = document.getElementById("btnHavnebadet");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[4];
+
+// When the user clicks on the button, open the modal
+btnHavnebadet.onclick = function() {
+  modalHavnebadet.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalHavnebadet.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalHavnebadet) {
+    modalHavnebadet.style.display = "none";
+  }
+}
+
+/*-------------------- Kunsthal Aarhus ---------------------*/
+
+// Get the modal
+var modalVinoriginalen = document.getElementById("vinoriginalen");
+
+// Get the button that opens the modal
+var btnVinoriginalen = document.getElementById("btnVinoriginalen");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[5];
+
+// When the user clicks on the button, open the modal
+btnVinoriginalen.onclick = function() {
+  modalKunsthalAarhus.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalVinoriginalen.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalVinoriginalen) {
+    modalVinoriginalen.style.display = "none";
+  }
+}
+
+
+/*-------------------- Kunsthal Aarhus ---------------------*/
+
+// Get the modal
+var modalKunsthalAarhus = document.getElementById("kunsthalAarhus");
+
+// Get the button that opens the modal
+var btnKunsthalAarhus = document.getElementById("btnKunsthalAarhus");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[6];
+
+// When the user clicks on the button, open the modal
+btnKunsthalAarhus.onclick = function() {
+  modalKunsthalAarhus.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalKunsthalAarhus.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalKunsthalAarhus) {
+    modalKunsthalAarhus.style.display = "none";
+  }
+}
+
+/*-------------------- Madmagasin ---------------------*/
+
+// Get the modal
+var modalMadmagasin = document.getElementById("madmagasin");
+
+// Get the button that opens the modal
+var btnMadmagasin = document.getElementById("btnMadmagasin");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[7];
+
+// When the user clicks on the button, open the modal
+btnMadmagasin.onclick = function() {
+  modalMadmagasin.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalMadmagasin.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalMadmagasin) {
+    modalMadmagasin.style.display = "none";
+  }
+}
+
+/*-------------------- Madmagasin blad ---------------------*/
+
+// Get the modal
+var modalBlad = document.getElementById("blad");
+
+// Get the button that opens the modal
+var btnBlad = document.getElementById("btnBlad");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[8];
+
+// When the user clicks on the button, open the modal
+btnBlad.onclick = function() {
+  modalBlad.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalBlad.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalBlad) {
+    modalBlad.style.display = "none";
+  }
+}
+
+
 
 
