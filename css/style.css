@@ -259,6 +259,7 @@ margin: 0 0 2rem 0;
    overflow: auto; /* Enable scroll if needed */
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   z-index: 10;
  }
  
  /* Modal Content/Box */
@@ -292,6 +293,10 @@ margin: 0 0 2rem 0;
  .text-container{
   font-family: josefin-sans, sans-serif; 
   color: #A7A9AA;
+  width: 95%;
+  margin-top: 5%;
+  margin: 2%;
+  text-align: left;
  }
  
  .text-container h3 {
@@ -311,17 +316,83 @@ margin: 0 0 2rem 0;
   }
 
   .img-container {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
   }
 
-  .img-container img {
-    width: 70%;
+  .mobiler>img {
+    width: 55%;
     display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
   }
+
+  .desktop>img {
+    width: 90%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  }
+
+  .ipad>img {
+    width: 65%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  }
+
+  /*--------tab----------*/
+  .tab {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tablinks, .tablinks2 {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #707070;
+    color: #707070;
+    margin: 5% 2%;
+  }
+  
+  .tablinks:hover, .tablinks2:hover {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    color: white;
+  }
+  
+  .tablinks.active, .tablinks2.active {
+    background-color: #707070;
+    color: white;
+  }
+  
+  .tabcontent, .tabcontent2 {
+    height: 50vh;
+    width: 100%;
+  }
+
+  /* knapper i modal */
+
+  .img-container3 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #Mobile2>img {
+    margin: 0 auto;
+    width: auto;
+    height: 50vh;
+  }
+
+  #Laptop2>img {
+    width: 90%;
+    margin: auto;
+}
 
 
  /*------------contact me ------------ */
@@ -408,22 +479,46 @@ margin-top: 5%;
   line-height: 2.6em;
 }
 
-@media screen and (min-width: 1024px){
-  .img-comp-img img {
-    width: 1024px ;
-    height: 550px ;
-  }
-  
-  .img-comp-container {
-    height: 550px; /*should be the same height as the images*/
-    width: 1024px;
-    margin: 0 auto;
-  
-  }
-}
+
 
 @media screen and (min-width: 1024px) {
   
+  /* modal */
+  .modal-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.img-comp-img img {
+  width: 1024px ;
+  height: 550px ;
+}
+
+.img-comp-container {
+  height: 550px; /*should be the same height as the images*/
+  width: 1024px;
+  margin: 0 auto;
+
+}
+
+.tab {
+  justify-content: flex-start;
+  padding-top: 2%;
+}
+
+.tabcontent2 {
+  height: auto;
+}
+
+#Mobile2>img {
+  width: 50%;
+  height: auto;
+}
+
+/* Contactsiden */
   #contact {
     padding-top: 3%;
   }
@@ -446,6 +541,8 @@ margin-top: 5%;
         margin-top: 0;
         margin-bottom: 2%;
       }
+
+
 
 }
 
@@ -475,4 +572,25 @@ margin-top: 5%;
     margin: 0 auto;
   
   }
+
+  .modal-content {
+    height: 85vh;
+  }
+  
+  .text-container {
+    font-size: 1em;
+  }
+
+  .mobiler>img {
+    width: 35%;
+  }
+
+  .ipad>img {
+    width: 50%;
+  }
+
+  #Mobile2>img {
+    width: 40%;
+  }
+
 }

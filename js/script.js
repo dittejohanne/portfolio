@@ -105,7 +105,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } */
-
 /*-------------------- Fridge Buddy ---------------------*/
 
 // Get the modal
@@ -259,7 +258,7 @@ var span = document.getElementsByClassName("close")[5];
 
 // When the user clicks on the button, open the modal
 btnVinoriginalen.onclick = function() {
-  modalKunsthalAarhus.style.display = "block";
+  modalVinoriginalen.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -359,6 +358,22 @@ window.onclick = function(event) {
   }
 }
 
+// Tabs
+function openDevice2(evt, deviceName) {
+  var i, tabcontent2, tablinks2;
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
+  }
+  tablinks2 = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks2.length; i++) {
+    tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen2").click();
 
 
