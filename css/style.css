@@ -354,6 +354,7 @@ margin: 0 0 2rem 0;
     width: 120px;
     height: 30px;
     border: 1px solid #707070;
+    border-radius: 15px;
     color: #707070;
     margin: 5% 2%;
   }
@@ -361,11 +362,12 @@ margin: 0 0 2rem 0;
   .tablinks:hover, .tablinks2:hover {
     background-color: lightgray;
     border: 1px solid lightgray;
+    border-radius: 15px;
     color: white;
   }
   
   .tablinks.active, .tablinks2.active {
-    background-color: #707070;
+    background-color: #D5B4AB;
     color: white;
   }
   
