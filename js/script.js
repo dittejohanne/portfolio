@@ -2,7 +2,7 @@
 /*-------------------- active i navbar ---------------------*/
 
 // Get the container element
-var btnContainer = document.getElementById("nav");
+var btnContainer = document.getElementById("nav1");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("btn");
