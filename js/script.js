@@ -359,6 +359,8 @@ window.onclick = function(event) {
 }
 
 // Tabs
+
+// Fridge Buddy
 function openDevice2(evt, deviceName) {
   var i, tabcontent2, tablinks2;
   tabcontent2 = document.getElementsByClassName("tabcontent2");
@@ -375,5 +377,78 @@ function openDevice2(evt, deviceName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen2").click();
+
+// Hjemis
+function openDevice(evt, deviceName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+// yousee
+function openDevice3(evt, deviceName) {
+  var i, tabcontent3, tablinks3;
+  tabcontent3 = document.getElementsByClassName("tabcontent3");
+  for (i = 0; i < tabcontent3.length; i++) {
+    tabcontent3[i].style.display = "none";
+  }
+  tablinks3 = document.getElementsByClassName("tablinks3");
+  for (i = 0; i < tablinks3.length; i++) {
+    tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen3").click();
+
+// Illustrationer
+function openDevice5(evt, deviceName) {
+  var i, tabcontent5, tablinks5;
+  tabcontent5 = document.getElementsByClassName("tabcontent5");
+  for (i = 0; i < tabcontent5.length; i++) {
+    tabcontent5[i].style.display = "none";
+  }
+  tablinks5 = document.getElementsByClassName("tablinks5");
+  for (i = 0; i < tablinks5.length; i++) {
+    tablinks5[i].className = tablinks5[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen5").click();
+
+
+// motion grafics
+function openDevice4(evt, deviceName) {
+  var i, tabcontent4, tablinks4;
+  tabcontent4 = document.getElementsByClassName("tabcontent4");
+  for (i = 0; i < tabcontent4.length; i++) {
+    tabcontent4[i].style.display = "none";
+  }
+  tablinks4 = document.getElementsByClassName("tablinks4");
+  for (i = 0; i < tablinks4.length; i++) {
+    tablinks4[i].className = tablinks4[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen4").click();
 
 

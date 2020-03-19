@@ -10,13 +10,13 @@
   
     <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">portfolio</a>
+            <a class="nav-link" href="#about">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">about</a>
+            <a class="nav-link active" href="#portfolio">portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">contact</a>
+          <a class="nav-link" href="#contact">contact</a>
         </li>
       </ul>
 
@@ -25,6 +25,7 @@
 </header> -->
 
 <!--hero billede> -->
+<div id="about">
 <div class="img-comp-container">
     <div class="img-comp-img">
       <img src="images/designer.png" width="375" height="220">
@@ -33,9 +34,10 @@
       <img src="images/coder.png" width="375" height="220">
     </div>
   </div>
+</div>
   
   <!--Vendespil -->
-    <div class="wrapper">   
+    <div class="wrapper" id="portfolio">   
         <div class="cols">
                   <div class="col">
                       <div class="container">
@@ -44,7 +46,7 @@
                           </div>
                           <div class="back">
                               <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                <p>Fridgebuddy - En webapp som hjælper til bedre overblik, inspiration til madlavning og påmindelse om indkøb</p>
                                 <button id="btnFridge">Læs mere</button>  
                             </div>
                           </div>
@@ -56,7 +58,7 @@
                            </div>
                           <div class="back">
                               <div class="inner">
-                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                  <p>En sommerkampagne for Hjem-IS, som skal genoplive de følelser og minder man forbinder med isklokken og de lyseblå biler</p>
                                   <button id="btnHjemIs"> Læs mere</button>
                               </div>
                           </div>
@@ -69,7 +71,7 @@
                           </div>
                           <div class="back">
                               <div class="inner">
-                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                  <p>youSee musikquiz er en interaktiv brugeroplevelse, der skal lokke flere publikummer til sportsevents</p>
                                   <button id="btnYousee">Læs mere</button>
                                 </div>
                           </div>
@@ -82,7 +84,7 @@
                           </div>
                           <div class="back">
                               <div class="inner">
-                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                  <p>En webdokumentar om to elever på Eriksminde efterskole, der skal tiltrække flere drenge til skolen</p>
                                   <button id="btnEriksminde">Læs mere</button>
                                 </div>
                           </div>
@@ -94,7 +96,7 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                <p>Et informationssite om Aarhus Havnebad med fokus på brugernes behov, fotografering og billederedigering</p>
                                 <button id="btnHavnebadet">Læs mere</button>
                               </div>
                         </div>
@@ -106,7 +108,8 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                <p>
+                                    Et website til den nystartede virksomhed, Vinoriginalen, med fokus på storytelling og visuel kommunikation</p>
                                 <button id="btnVinoriginalen">Læs mere</button>
                               </div>
                         </div>
@@ -119,7 +122,7 @@
                           </div>
                           <div class="back">
                               <div class="inner">
-                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                  <p>Et produkt, udviklet efter mobile first paradigmet, med en interaktiv user experience med lyd og fortællinger</p>
                                   <button id="btnKunsthalAarhus">Læs mere</button>
                                 </div>
                           </div>
@@ -127,12 +130,12 @@
                   </div>
                   <div class="col">
                       <div class="container">
-                          <div class="front" style="background-image: url(../images/magazine.png)">
+                          <div class="front" style="background-image: url(../images/illustrator.png)">
                                 
                           </div>
                           <div class="back">
                               <div class="inner">
-                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                  <p>Eksempler på mine Illustrationer, som jeg har lavet i Adobe Illustrator </p>
                                   <button id="btnMadmagasin">Læs mere</button>
                                 </div>
                           </div>
@@ -140,11 +143,11 @@
                   </div>
                   <div class="col">
                     <div class="container">
-                        <div class="front" style="background-image: url(../images/magazineblad.png)">  
+                        <div class="front" style="background-image: url(../images/motiongraphic.png)">  
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                                <p>Eksempler på Motion Graphics, som jeg har lavet i Adobe After Affects </p>
                                 <button id="btnBlad">Læs mere</button>
                               </div>
                         </div>
@@ -166,15 +169,17 @@
       <h3>Fidge Buddy</h3>
       <h4>3. semester eksamen - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>Webapplikationskoncept udviklet med HTML, CSS og JavaScript</li>
+        <li>Single Page Application (SPA)</li>
+        <li>Firebase til login og datalagering</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        <li>Ikoner og logo designet i Adobe Illustrator og Photoshop</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Fridgebuddy er en webapp, som hjælper brugeren med at udnytte sine madvare bedre, og derved bidrager til mindre madspil. Webappen holder overblik over brugerens madvarer, og minder om deres udløbsdato ved hjælp af intuitive farver. Ved udløb kan madvaren slettes. Fridgebuddy foreslår også opskrifter, der matcher brugerens indtastede madvare i søgefeltet. Yderligere er en digital indkøbsliste, som vi ønsker at videreudvikle i nærmere fremtid.</p>
       <div class="tab">
         <button class="tablinks2" onclick="openDevice2(event, 'Mobile2')" id="defaultOpen2">mobile</button>
-        <button class="tablinks2" onclick="openDevice2(event, 'Laptop2')">design process</button>
+        <button class="tablinks2" onclick="openDevice2(event, 'Laptop2')">wireframes</button>
       </div>
     </div>
       <!-- <div class="img-container">
@@ -205,20 +210,38 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Hjemis</h3>
+      <h4>1. semester eksamen - individuelt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>HTML og CSS</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        <li>Mobile First paradigmet og Responsive Web Design</li>
+        <li>Flatdesign - illustrationer og ikoner udviklet i Adobe Illustrator</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Jeg har udviklet en informationsside for Hjemis, som skal fungerer som en sommerkampagne. Jeg udviklede et nyt visuelt design til Hjem-IS, med stort fokus på at bevare historie og tradition for at bibeholde brandets stærke genkendelighed. I forbindelse med sommerkampagnen designede jeg også et nyt transportmiddel: Hjemis-cyklen, for at medvirke til mere omtale og reklame. I mine illustrationer har jeg arbejdet med rene linjer, skarpe kanter og lyse farver.</p>
+      <div class="tab">
+        <button class="tablinks" onclick="openDevice(event, 'Mobile')">desktop</button>
+        <button class="tablinks" onclick="openDevice(event, 'Laptop')" id="defaultOpen">wireframes</button>
+        <button class="tablinks" onclick="openDevice(event, 'Ekstra')" id="defaultOpen">Infographic</button>
+      </div>
     </div>
-      <div class="img-container">
+    <div class="img-container3">
+        <div id="Mobile" class="tabcontent show-on-scroll">
+          <img src="images/hjemIs.gif" alt="bassin 7 mobile">
+        </div>
+
+        <div id="Laptop" class="tabcontent show-on-scroll">
+          <img class="bassin7-laptop" src="images/hjemis-wireframe.png" alt="bassin 7 laptop">
+        </div>
+
+        <div id="Ekstra" class="tabcontent show-on-scroll">
+            <img class="bassin7-laptop" src="images/infographic.png" alt="bassin 7 laptop">
+          </div>
+      <!-- <div class="img-container">
         <div class="desktop">
         <img src="images/hjemIs.gif" alt="fridgebuddy">
-        </div>
+        </div> -->
     </div>
     </div>
     </div>
@@ -233,20 +256,35 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>youSee Musikquiz</h3>
+      <h4>2. semester UX/Some - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>Interaktiv User Experience til sponsoraktivering ifm. en sportsbegivenhed</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        <li>Visuel kommunikation</li>
+        <li>HTML, CSS, Javascript, jQuery og API</li>
+        <li>Agil udviklingsmetode: SCRUM</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>youSee Musikquiz er en interaktiv brugeroplevelse, der er udviklet til at underholde tilskuere til et sportsevent, før, under og efter eventet. Konceptet omkring musikquizzen er at brugeren skal vælge en musikgenre at quizze i. Herefter skal brugeren begynde at jonglere med fodbolden for at få musikken til at spille, og så gætte det rigtige svar på skærmen. </p>
+      <div class="tab">
+        <button class="tablinks3" onclick="openDevice3(event, 'Mobile3')" id="defaultOpen3">ipad</button>
+        <button class="tablinks3" onclick="openDevice3(event, 'Laptop3')">wireframes</button>
+      </div>
     </div>
-      <div class="img-container">
+    <div class="img-container3">
+        <div id="Mobile3" class="tabcontent3 show-on-scroll">
+          <img src="images/yousee.gif" alt="bassin 7 mobile">
+
+        </div>
+
+        <div id="Laptop3" class="tabcontent3 show-on-scroll">
+          <img class="bassin7-laptop" src="images/yousee-wireframe.png" alt="bassin 7 laptop">
+        </div>
+      <!-- <div class="img-container">
         <div class="ipad">
         <img src="images/yousee.gif" alt="fridgebuddy">
-        </div>
+        </div> -->
     </div>
     </div>
     </div>
@@ -261,15 +299,17 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Webdokumentar - Eriksminde Efterskole</h3>
+      <h4>2. semester webdoc - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>HTML, CSS og JavaScript</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        <li>Interaktiv audio og video</li>
+        <li>Storytelling</li>
+        <li>Video - filmet med drone</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Webdoc’en er en oplysende platform, der skal vække lysten hos drenge til at besøge Eriksminde Efterskole, igennem nuværende elevers egne fortællinger. Vi har udarbejdet en legende og overraskende webdoc, som indeholder hurtig og let information i et kreativt design, rettet mod drenge. Sitet vækker også nysgerrighed og opmærksomhed gennem det legende design og interaktionen gennem video og lyd.</p>
     </div>
       <div class="img-container">
         <div class="desktop">
@@ -289,15 +329,19 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Havnebadet - bassin 7</h3>
+      <h4>1. semester - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>HTML og CSS</li>
+        <li>Feltresearch: Interviewguide og observationsguide</li>
+        <li>Målgruppeanalyse og persona</li>
+        <li>Fotografering og billederedigering i Adobe Photoshop</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Vi har udviklet et website til Havnebadet, da de på daværende tidspunkt, ikke havde en eksisterende hjemmeside. Websitet er lavet på baggrund af deskresearch og feltarbejde med fokus på at opfylde brugernes behov om information på siden. Heriblandt information om åbningstider, faciliteter og events. Dette indhold vises gennem tekst og egne fotograferede fotos. </p>
+
     </div>
       <div class="img-container">
         <div class="desktop">
@@ -317,15 +361,16 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Vinoriginalen</h3>
+      <h4>2. semester eksamen - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>Et koncept og interaktiv digital prototype for en virksomhed</li>
+        <li>HTML, CSS, JavaScript og jQuery</li>
+        <li>Moodboard, skitser, wireframes, styletile, mockup</li>
+        <li>Designguide</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Vinoriginalen er en nystartet virksomhed som mangler en online tilstedeværelse og visuel identitet. Derfor udviklede vi et informationssite med elementer fra en webshop, og en designguide til virksomheden. Websitet fokuserer på storytelling gennem billeder og en fortællende stil og tone. Siden præsentere virksomheden, dens vine og historien bag hele konceptet.</p>
     </div>
       <div class="img-container">
         <div class="desktop">
@@ -345,15 +390,15 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Kunsthal Aarhus</h3>
+      <h4>1. semester - gruppeprojekt</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>HTML, CSS and JavaScript</li>
+        <li>Mobile First paradigmet og Responsive Web Design</li>
+        <li>Interaktiv User Experience</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Kunsthal Aarhus er et lille museum i Aarhus, som vi ønskede at tilføre noget mere. Vi oplevede et behov for mere information, men generelt også en bedre fortælling ift. udstillingerne. Derfor udviklede vi en prototype efter mobile first paradigme, som ville kunne bruges når man besøger kunsthallen. Den tilføre en ekstra dimension via. lyd og et interaktivt kort med fortællinger om udstillingerne, når man vandre rundt på museet.</p>
     </div>
       <div class="img-container">
         <div class="mobiler">
@@ -365,7 +410,7 @@
   
   </div>
 
-  <!------------- Smagfulde Aarhus - online magazine------------- -->
+  <!------------- Illustrationer i Adobe Illustrator------------- -->
   <div id="madmagasin" class="modal">
 
     <!-- Modal content -->
@@ -373,19 +418,29 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Illustrationer</h3>
+      <h4>Fritidsprojekter</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>Adobe Illustrator</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>Som fritidsprojekter har jeg leget meget med Adobe Illustrator, da jeg elsker at udvikle illustrationer af elementer fra den virkelige verden. Det får et let og renere udtryk, som jeg ofte synes er gode elementer at arbejde med på et website.</p>
+      <div class="tab">
+        <button class="tablinks5" onclick="openDevice5(event, 'Mobile5')" id="defaultOpen5">Selvportræt</button>
+        <button class="tablinks5" onclick="openDevice5(event, 'Laptop5')">Citroner</button>
+      </div>
     </div>
-      <div class="img-container">
+    <div class="img-container3">
+        <div id="Mobile5" class="tabcontent5 show-on-scroll">
+          <img src="images/johanne.png" alt="bassin 7 mobile">
+        </div>
+
+        <div id="Laptop5" class="tabcontent5 show-on-scroll">
+          <img class="bassin7-laptop" src="images/citron.png" alt="bassin 7 laptop">
+        </div>
+      <!-- <div class="img-container">
         <div class="desktop">
-        <img src="images/onlineMagazine.gif" alt="fridgebuddy">
+        <img id="johanne" src="images/johanne.png" alt="fridgebuddy"> -->
     </div>
     </div>
     </div>
@@ -393,7 +448,7 @@
   
   </div>
 
-  <!------------- Madmagasin------------- -->
+  <!------------- Motion Graphics------------- -->
   <div id="blad" class="modal">
 
     <!-- Modal content -->
@@ -401,20 +456,32 @@
       <span class="close">&times;</span>
       <div class="modal-container">
       <div class="text-container">
-      <h3>Fidge Buddy</h3>
-      <h4>3. semester eksamen - gruppeprojekt</h4>
+      <h3>Motion Graphics</h3>
+      <h4>Studiejob som studentermedhælper hos Vimavima</h4>
       <ul>
-        <li>Web Application concept developed with HTML, CSS and JavaScript</li>
-        <li>Single Page Application</li>
-        <li>Firebase for login authentification and data storage</li>
+        <li>Motion Graphics</li>
+        <li>Adobe After Effects og Illustrator</li>
       </ul>  
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p>I forbindelse med mit studiejob har jeg skulle udvikle grafisk materiale til Vimavima. Derfor kastede jeg mig ud i Motion Grafics, da det er hurtigt og let informationsmateriale, som kan bruges på tværs af alle digitale medier</p>
+      <div class="tab">
+        <button class="tablinks4" onclick="openDevice4(event, 'Mobile4')" id="defaultOpen4">Blå Motion Graphic</button>
+        <button class="tablinks4" onclick="openDevice4(event, 'Laptop4')">Grøn Motion Graphic</button>
+      </div>
     </div>
-      <div class="img-container">
+    <div class="img-container3">
+        <div id="Mobile4" class="tabcontent4 show-on-scroll">
+          <img src="images/motiongraphic_blå.gif" alt="bassin 7 mobile">
+
+        </div>
+
+        <div id="Laptop4" class="tabcontent4 show-on-scroll">
+          <img class="bassin7-laptop" src="images/motiongraphic_grøn.gif" alt="bassin 7 laptop">
+        </div>
+      <!-- <div class="img-container">
         <div class="desktop">
-        <img src="images/fridgebuddy.png" alt="fridgebuddy">
-    </div>
+        <img src="images/motiongraphic_blå.gif" alt="fridgebuddy">
+    </div> -->
     </div>
     </div>
     </div>

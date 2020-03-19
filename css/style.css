@@ -168,6 +168,7 @@ box-sizing: border-box;
 outline: 1px solid transparent;     
 perspective: inherit;
 z-index: 2;
+font-family: josefin-sans, sans-serif;
 }
 
 .container .back{    
@@ -350,7 +351,7 @@ margin: 0 0 2rem 0;
     justify-content: center;
   }
   
-  .tablinks, .tablinks2 {
+  .tablinks, .tablinks2, .tablinks3, .tablinks4, .tablinks5 {
     width: 120px;
     height: 30px;
     border: 1px solid #707070;
@@ -359,20 +360,20 @@ margin: 0 0 2rem 0;
     margin: 5% 2%;
   }
   
-  .tablinks:hover, .tablinks2:hover {
+  .tablinks:hover, .tablinks2:hover, .tablinks3:hover, .tablinks4:hover, .tablinks5:hover {
     background-color: lightgray;
     border: 1px solid lightgray;
     border-radius: 15px;
     color: white;
   }
   
-  .tablinks.active, .tablinks2.active {
-    background-color: #D5B4AB;
+  .tablinks.active, .tablinks2.active, .tablinks3.active, .tablinks4.active, .tablinks5.active{
+    background-color: #799998;
     color: white;
   }
   
-  .tabcontent, .tabcontent2 {
-    height: 50vh;
+  .tabcontent, .tabcontent2, .tabcontent3, .tabcontent4, .tabcontent5{
+    height: auto;
     width: 100%;
   }
 
@@ -385,6 +386,26 @@ margin: 0 0 2rem 0;
 
   }
 
+  /* hjemis */
+#Mobile>img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#Laptop>img {
+  width: 95%;
+  margin: auto;
+}
+
+#Ekstra>img {
+  width: 95%;
+  margin: auto;
+}
+
+
+
+/* fridgebuddy */
   #Mobile2>img {
     margin: 0 auto;
     width: auto;
@@ -394,6 +415,41 @@ margin: 0 0 2rem 0;
   #Laptop2>img {
     width: 90%;
     margin: auto;
+}
+
+/* hjemis */
+#Mobile3>img {
+  height: auto;
+  margin: 0 auto;
+}
+
+#Laptop3>img {
+  width: 95%;
+  margin: auto;
+}
+
+/* motion grafics */
+#Mobile4>img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Laptop4>img {
+  width: 95%;
+  margin: auto;
+}
+
+/* Selvportræt */
+#Mobile5>img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Laptop5>img {
+  width: 95%;
+  margin: auto;
 }
 
 
@@ -481,6 +537,22 @@ margin-top: 5%;
   line-height: 2.6em;
 }
 
+#Mobile>img {
+  width: 70%;
+}
+
+#Laptop>img {
+  width: 50%;
+}
+
+#Ekstra>img {
+  width: 60%;
+}
+
+#Mobile5>img {
+  width: 60%;
+}
+
 
 
 @media screen and (min-width: 1024px) {
@@ -518,6 +590,10 @@ margin-top: 5%;
 #Mobile2>img {
   width: 50%;
   height: auto;
+}
+
+#Laptop>img {
+  width: 35%;
 }
 
 /* Contactsiden */
