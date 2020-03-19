@@ -7,8 +7,6 @@
    height: 5vh;
    z-index: 1000;
    position: fixed;
-   -webkit-animation: slide-in-top 1s ease-out 0s both;
-   animation: slide-in-top 1s ease-out 0s both;
 }
 
 /* Style the active class, and buttons on mouse-over */
