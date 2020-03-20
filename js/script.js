@@ -441,4 +441,82 @@ function openDevice4(evt, deviceName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen4").click();
 
+// Webdoc
+function openDevice6(evt, deviceName) {
+  var i, tabcontent6, tablinks6;
+  tabcontent6 = document.getElementsByClassName("tabcontent6");
+  for (i = 0; i < tabcontent6.length; i++) {
+    tabcontent6[i].style.display = "none";
+  }
+  tablinks6 = document.getElementsByClassName("tablinks6");
+  for (i = 0; i < tablinks6.length; i++) {
+    tablinks6[i].className = tablinks6[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen6").click();
+
+
+
+// havnebadet
+function openDevice7(evt, deviceName) {
+  var i, tabcontent7, tablinks7;
+  tabcontent7 = document.getElementsByClassName("tabcontent7");
+  for (i = 0; i < tabcontent7.length; i++) {
+    tabcontent7[i].style.display = "none";
+  }
+  tablinks7 = document.getElementsByClassName("tablinks7");
+  for (i = 0; i < tablinks7.length; i++) {
+    tablinks7[i].className = tablinks7[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen7").click();
+
+
+// Vinoriginalen
+function openDevice8(evt, deviceName) {
+  var i, tabcontent8, tablinks8;
+  tabcontent8 = document.getElementsByClassName("tabcontent8");
+  for (i = 0; i < tabcontent8.length; i++) {
+    tabcontent8[i].style.display = "none";
+  }
+  tablinks8 = document.getElementsByClassName("tablinks8");
+  for (i = 0; i < tablinks8.length; i++) {
+    tablinks8[i].className = tablinks8[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen8").click();
+
+
+// Kunsthall
+function openDevice9(evt, deviceName) {
+  var i, tabcontent9, tablinks9;
+  tabcontent9 = document.getElementsByClassName("tabcontent9");
+  for (i = 0; i < tabcontent9.length; i++) {
+    tabcontent9[i].style.display = "none";
+  }
+  tablinks9 = document.getElementsByClassName("tablinks9");
+  for (i = 0; i < tablinks9.length; i++) {
+    tablinks9[i].className = tablinks9[i].className.replace(" active", "");
+  }
+  document.getElementById(deviceName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen9").click();
+
+
+
 

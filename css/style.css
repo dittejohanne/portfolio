@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 /* -----------Navigation -------------- */
 .justify-content-center {
@@ -12,7 +15,7 @@
 /* Style the active class, and buttons on mouse-over */
 .active2, .btn:hover {
   color: #707070;
-  font-weight: 550;}
+  font-weight: 450;}
 
 .nav-link {
    display: block;
@@ -47,7 +50,9 @@ a {
 
 .img-comp-container {
   position: relative;
-  height: 180px; /*should be the same height as the images*/
+  height: 250px; /*should be the same height as the images*/
+  width: 375px ;
+  margin: 0 auto;
 }
 
 .img-comp-img {
@@ -64,18 +69,42 @@ a {
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #CD9D31;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.img-comp-slider:hover {
+  animation: none;
+  transform: scale(1.2);
 }
 
-
-/* Hero billede */
-
-#hero {
-   width: 80%; margin: 0 10%;
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(201, 162, 24, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(201, 162, 24, 0.4);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(199, 162, 31, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(202, 165, 30, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }
 
 
@@ -112,6 +141,7 @@ margin: 1rem;
 cursor: pointer;
 margin-left: -5px;
 margin-bottom: -5px;
+z-index: 1;
 }
 
 .container{
@@ -268,7 +298,7 @@ margin: 0 0 2rem 0;
    overflow: auto; /* Enable scroll if needed */
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-   z-index: 10;
+   z-index: 1000;
  }
  
  /* Modal Content/Box */
@@ -335,42 +365,13 @@ margin: 0 0 2rem 0;
     margin-left: 5%;
   }
 
-  .img-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .mobiler>img {
-    width: 55%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-  }
-
-  .desktop>img {
-    width: 90%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-  }
-
-  .ipad>img {
-    width: 65%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-  }
-
   /*--------tab----------*/
   .tab {
     display: flex;
     justify-content: center;
   }
   
-  .tablinks, .tablinks2, .tablinks3, .tablinks4, .tablinks5 {
+  .tablinks, .tablinks2, .tablinks3, .tablinks4, .tablinks5, .tablinks6, .tablinks7, .tablinks8, .tablinks9 {
     width: 120px;
     height: 30px;
     border: 1px solid #707070;
@@ -380,7 +381,7 @@ margin: 0 0 2rem 0;
     font-size: 0.7em;
   }
   
-  .tablinks:hover, .tablinks2:hover, .tablinks3:hover, .tablinks4:hover, .tablinks5:hover {
+  .tablinks:hover, .tablinks2:hover, .tablinks3:hover, .tablinks4:hover, .tablinks5:hover, .tablinks6:hover, tablinks7:hover, tablinks8:hover, tablinks9:hover {
     background-color: lightgray;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -388,13 +389,13 @@ margin: 0 0 2rem 0;
     transform: scale(1.2);
   }
   
-  .tablinks.active, .tablinks2.active, .tablinks3.active, .tablinks4.active, .tablinks5.active{
+  .tablinks.active, .tablinks2.active, .tablinks3.active, .tablinks4.active, .tablinks5.active, .tablinks6.active, .tablinks7.active, .tablinks8.active, .tablinks9.active{
     background-color: #A6BFC8;
     color: white;
   }
   
-  .tabcontent, .tabcontent2, .tabcontent3, .tabcontent4, .tabcontent5{
-    height: auto;
+  .tabcontent, .tabcontent2, .tabcontent3, .tabcontent4, .tabcontent5, .tabcontent6, .tabconten7,  .tabconten8, .tabconten9{
+    height: 100%;
     width: 100%;
   }
 
@@ -418,18 +419,20 @@ margin: 0 0 2rem 0;
   /* hjemis */
 #Mobile>img {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
 }
 
 #Laptop>img {
   width: 95%;
   margin: auto;
+  height: 100%;
 }
 
 #Ekstra>img {
   width: 95%;
   margin: auto;
+  height: 100%;
 }
 
 
@@ -442,13 +445,15 @@ margin: 0 0 2rem 0;
   }
 
   #Laptop2>img {
-    width: 90%;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 
 #Ekstra2>img {
   width: 85%;
   margin: auto;
+  height: 100%;
 }
 
 /* yousee */
@@ -460,37 +465,92 @@ margin: 0 0 2rem 0;
 #Laptop3>img {
   width: 95%;
   margin: auto;
+  height: 100%;
 }
 
 #Ekstra3>img {
   width: 75%;
   margin: auto;
+  height: 100%;
 }
 
 /* motion grafics */
 #Mobile4>img {
-  height: auto;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 #Laptop4>img {
-  width: 95%;
+  width: 100%;
   margin: auto;
+  height: 100%;
 }
 
 /* Selvportræt */
 #Mobile5>img {
-  height: auto;
+  height: 100%;
   width: 90%;
   margin: 0 auto;
 }
 
 #Laptop5>img {
-  width: 95%;
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
 
+/* webdoc */
+#Mobile6>img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Laptop6>img {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+/* Havnebadet */
+#Mobile7>img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Laptop7>img {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+/* Vinoriginalen */
+#Mobile8>img {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Laptop8>img {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+/* Kunsthal */
+#Mobile9>img {
+  height: 60%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#Laptop9>img {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
 
  /*------------contact me ------------ */
 
@@ -552,15 +612,43 @@ margin-top: 5%;
 }
 
 /*------------media queries ------------ */
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 412px)  {
   .img-comp-img img {
-    width: 768px ;
-    height: 400px;
+    width: 412px ;
+    height: 280px;
     
   }
   
   .img-comp-container {
-    height: 400px; /*should be the same height as the images*/
+    height: 280px; /*should be the same height as the images*/
+    width: 412px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px)  {
+  .img-comp-img img {
+    width: 600px ;
+    height: 380px;
+    
+  }
+  
+  .img-comp-container {
+    height: 380px; /*should be the same height as the images*/
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .img-comp-img img {
+    width: 768px ;
+    height: 460px;
+    
+  }
+  
+  .img-comp-container {
+    height: 460px; /*should be the same height as the images*/
     width: 768px;
     margin: 0 auto;
   }
@@ -577,7 +665,7 @@ margin-top: 5%;
 
 /* Hjemis */
 #Mobile>img {
-  width: 70%;
+  width: 85%;
 }
 
 #Laptop>img {
@@ -588,10 +676,9 @@ margin-top: 5%;
   width: 60%;
 }
 
-/* motiongraphics */
-
+/* illustrationer */
 #Mobile5>img {
-  width: 40%;
+  width: 60%;
 }
 
 /* yousee */
@@ -627,11 +714,11 @@ margin-top: 5%;
 
 .img-comp-img img {
   width: 1024px ;
-  height: 550px ;
+  height: 620px ;
 }
 
 .img-comp-container {
-  height: 550px; /*should be the same height as the images*/
+  height: 620px; /*should be the same height as the images*/
   width: 1024px;
   margin: 0 auto;
 
@@ -654,6 +741,27 @@ margin-top: 5%;
 #Laptop>img {
   width: 35%;
 }
+ /*webdoc*/
+#Laptop6>img {
+  width: 50%;
+}
+
+ /*havnebadet*/
+ #Laptop7>img {
+  width: 50%;
+}
+
+/*Vinoriginalen*/
+#Laptop8>img {
+  width: 50%;
+}
+
+/*kunsthal*/
+#Mobile9>img {
+  width: 50%;
+  height: auto;
+}
+
 
 /* Contactsiden */
   #contact {
@@ -674,7 +782,7 @@ margin-top: 5%;
       }
     
 .contact-img-container {
-        width: 25%;
+        width: 40%;
         margin-top: 0;
         margin-bottom: 2%;
       }
@@ -706,25 +814,32 @@ margin-top: 5%;
 @media screen and (min-width: 1280px){
   .img-comp-img img {
     width: 1280px ;
-    height: 700px ;
+    height: 790px ;
   }
   
   .img-comp-container {
-    height: 700px; /*should be the same height as the images*/
+    height: 790px; /*should be the same height as the images*/
     width: 1280px;
     margin: 0 auto;
   
   }
+
+/* illustrationer */
+
+#Mobile5>img {
+  width: 78%;
+}
+
 }
 
 @media screen and (min-width: 1440px){
   .img-comp-img img {
     width: 1440px ;
-    height: 770px ;
+    height: 820px ;
   }
   
   .img-comp-container {
-    height: 770px; /*should be the same height as the images*/
+    height: 820px; /*should be the same height as the images*/
     width: 1440px;
     margin: 0 auto;
   
@@ -738,15 +853,33 @@ margin-top: 5%;
     font-size: 1em;
   }
 
-  .mobiler>img {
-    width: 35%;
-  }
-
-  .ipad>img {
-    width: 50%;
-  }
-
+/*fridgebuddy*/
   #Mobile2>img {
+    width: 40%;
+  }
+
+  /*webdoc*/
+  #Laptop6>img {
+    width:45%;
+  }
+
+  /*havnebadet*/
+  #Laptop7>img {
+    width:45%;
+  }
+
+  /*Vinoriginalen*/
+  #Laptop8>img {
+    width:45%;
+  }
+
+    /* yousee */
+#Mobile3>img {
+  width: 45%;
+ }
+
+  /*kunsthal*/
+  #Mobile9>img {
     width: 40%;
   }
 
