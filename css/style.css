@@ -15,7 +15,7 @@ html {
 /* Style the active class, and buttons on mouse-over */
 .active2, .btn:hover {
   color: #707070;
-  font-weight: 450;}
+  font-weight: bold;}
 
 .nav-link {
    display: block;
@@ -180,12 +180,6 @@ display: block;
 backface-visibility: hidden;
 
 }
-.container:hover .front,
-.container:hover .back{
-
-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-
-}
 
 .back{
 position: absolute;
@@ -219,16 +213,6 @@ transform: rotateY(0deg);
 transform-style: preserve-3d;
 }
 
-.container:hover .back{
-transform: rotateY(0deg);
-transform-style: preserve-3d;
-}
-
-.container:hover .front{
- transform: rotateY(-180deg);
- transform-style: preserve-3d;
-}
-
 .front .inner p{
 font-size: 1rem;
 margin-bottom: 2rem;
@@ -254,11 +238,11 @@ font-family: 'Roboto Condensed', sans-serif;
 font-weight: 300;
 }
 
-@media screen and (max-width: 64rem){
+c
 .col{
 width: calc(33.333333% - 2rem);
 }
-}
+
 
 @media screen and (max-width: 48rem){
 .col{
@@ -270,6 +254,26 @@ width: calc(50% - 2rem);
 .col{
 width: 100%;
 margin: 0 0 2rem 0;
+}
+}
+
+/* hoveranimation - vendespil */
+@media screen and (min-width: 700px){
+  .container:hover .front,
+  .container:hover .back{
+  
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+  } 
+
+  .container:hover .back{
+transform: rotateY(0deg);
+transform-style: preserve-3d;
+}
+
+.container:hover .front{
+ transform: rotateY(-180deg);
+ transform-style: preserve-3d;
 }
 }
 
@@ -458,7 +462,7 @@ margin: 0 0 2rem 0;
 
 /* yousee */
 #Mobile3>img {
-  height: auto;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -502,7 +506,7 @@ margin: 0 0 2rem 0;
 
 /* webdoc */
 #Mobile6>img {
-  height: auto;
+  height: 100%;
   width: 90%;
   margin: 0 auto;
 }
@@ -515,7 +519,7 @@ margin: 0 0 2rem 0;
 
 /* Havnebadet */
 #Mobile7>img {
-  height: auto;
+  height: 100%;
   width: 90%;
   margin: 0 auto;
 }
@@ -528,7 +532,7 @@ margin: 0 0 2rem 0;
 
 /* Vinoriginalen */
 #Mobile8>img {
-  height: auto;
+  height: 100%;
   width: 90%;
   margin: 0 auto;
 }

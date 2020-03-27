@@ -102,14 +102,27 @@ var modalFridge = document.getElementById("fridgeBuddy");
 
 // Get the button that opens the modal
 var btnFridge = document.getElementById("btnFridge");
+var imgFridge = document.getElementById("imgFridge")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btnFridge.onclick = function() {
-  modalFridge.style.display = "block";
+function myFunctionFridge(x) {
+  if (x.matches) { // If media query matches
+    btnFridge.onclick = function() {
+      modalFridge.style.display = "block";
+    };
+  } else {
+    imgFridge.onclick = function() {
+      modalFridge.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionFridge(x) // Call listener function at run time
+x.addListener(myFunctionFridge) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -130,14 +143,27 @@ var modalHjemIs = document.getElementById("hjemIs");
 
 // Get the button that opens the modal
 var btnHjemIs = document.getElementById("btnHjemIs");
+var imgHjemIs = document.getElementById("imgHjemIs");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[1];
 
 // When the user clicks on the button, open the modal
-btnHjemIs.onclick = function() {
-  modalHjemIs.style.display = "block";
+function myFunctionHjemis(x) {
+  if (x.matches) { // If media query matches
+    btnHjemIs.onclick = function() {
+      modalHjemIs.style.display = "block";
+    };
+  } else {
+    imgHjemis.onclick = function() {
+      modalHjemIs.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionHjemis(x) // Call listener function at run time
+x.addListener(myFunctionHjemis) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -158,14 +184,27 @@ var modalYousee = document.getElementById("yousee");
 
 // Get the button that opens the modal
 var btnYousee = document.getElementById("btnYousee");
+var imgYousee = document.getElementById("imgYousee")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[2];
 
 // When the user clicks on the button, open the modal
-btnYousee.onclick = function() {
-  modalYousee.style.display = "block";
+function myFunctionYousee(x) {
+  if (x.matches) { // If media query matches
+    btnYousee.onclick = function() {
+      modalYousee.style.display = "block";
+    };
+  } else {
+    imgYousee.onclick = function() {
+      modalYousee.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionYousee(x) // Call listener function at run time
+x.addListener(myFunctionYousee) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -186,14 +225,27 @@ var modalEriksminde = document.getElementById("eriksminde");
 
 // Get the button that opens the modal
 var btnEriksminde = document.getElementById("btnEriksminde");
+var imgEriksminde = document.getElementById("imgEriksminde");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[3];
 
 // When the user clicks on the button, open the modal
-btnEriksminde.onclick = function() {
-  modalEriksminde.style.display = "block";
+function myFunctionWebdoc(x) {
+  if (x.matches) { // If media query matches
+    btnEriksminde.onclick = function() {
+      modalEriksminde.style.display = "block";
+    };
+  } else {
+    imgEriksminde.onclick = function() {
+      modalEriksminde.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionWebdoc(x) // Call listener function at run time
+x.addListener(myFunctionWebdoc) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -214,14 +266,27 @@ var modalHavnebadet = document.getElementById("havnebadet");
 
 // Get the button that opens the modal
 var btnHavnebadet = document.getElementById("btnHavnebadet");
+var imgHavnebadet = document.getElementById("imgHavnebadet");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[4];
 
 // When the user clicks on the button, open the modal
-btnHavnebadet.onclick = function() {
-  modalHavnebadet.style.display = "block";
+function myFunctionHavnebadet(x) {
+  if (x.matches) { // If media query matches
+    btnHavnebadet.onclick = function() {
+      modalHavnebadet.style.display = "block";
+    };
+  } else {
+    imgHavnebadet.onclick = function() {
+      modalHavnebadet.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionHavnebadet(x) // Call listener function at run time
+x.addListener(myFunctionHavnebadet) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -235,21 +300,34 @@ window.onclick = function(event) {
   }
 }
 
-/*-------------------- Kunsthal Aarhus ---------------------*/
+/*-------------------- Vinoriginalen Aarhus ---------------------*/
 
 // Get the modal
 var modalVinoriginalen = document.getElementById("vinoriginalen");
 
 // Get the button that opens the modal
 var btnVinoriginalen = document.getElementById("btnVinoriginalen");
+var imgVinoriginalen = document.getElementById("imgVinoriginalen")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[5];
 
 // When the user clicks on the button, open the modal
-btnVinoriginalen.onclick = function() {
-  modalVinoriginalen.style.display = "block";
+function myFunctionVinoriginalen(x) {
+  if (x.matches) { // If media query matches
+    btnVinoriginalen.onclick = function() {
+      modalVinoriginalen.style.display = "block";
+    };
+  } else {
+    imgVinoriginalen.onclick = function() {
+      modalVinoriginalen.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionVinoriginalen(x) // Call listener function at run time
+x.addListener(myFunctionVinoriginalen) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -271,14 +349,27 @@ var modalKunsthalAarhus = document.getElementById("kunsthalAarhus");
 
 // Get the button that opens the modal
 var btnKunsthalAarhus = document.getElementById("btnKunsthalAarhus");
+var imgKunsthalAarhus = document.getElementById("imgKunsthalAarhus");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[6];
 
 // When the user clicks on the button, open the modal
-btnKunsthalAarhus.onclick = function() {
-  modalKunsthalAarhus.style.display = "block";
+function myFunctionKunsthal(x) {
+  if (x.matches) { // If media query matches
+    btnKunsthalAarhus.onclick = function() {
+      modalKunsthalAarhus.style.display = "block";
+    };
+  } else {
+    imgKunsthalAarhus.onclick = function() {
+      modalKunsthalAarhus.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionKunsthal(x) // Call listener function at run time
+x.addListener(myFunctionKunsthal) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -292,21 +383,34 @@ window.onclick = function(event) {
   }
 }
 
-/*-------------------- Madmagasin ---------------------*/
+/*-------------------- Illustrationer ---------------------*/
 
 // Get the modal
 var modalMadmagasin = document.getElementById("madmagasin");
 
 // Get the button that opens the modal
 var btnMadmagasin = document.getElementById("btnMadmagasin");
+var imgMadmagasin = document.getElementById("imgMadmagasin");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[7];
 
 // When the user clicks on the button, open the modal
-btnMadmagasin.onclick = function() {
-  modalMadmagasin.style.display = "block";
+function myFunctionIllustrationer(x) {
+  if (x.matches) { // If media query matches
+    btnMadmagasin.onclick = function() {
+      modalMadmagasin.style.display = "block";
+    };
+  } else {
+    imgMadmagasin.onclick = function() {
+      modalMadmagasin.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionIllustrationer(x) // Call listener function at run time
+x.addListener(myFunctionIllustrationer) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -320,21 +424,34 @@ window.onclick = function(event) {
   }
 }
 
-/*-------------------- Madmagasin blad ---------------------*/
+/*-------------------- Motion Graphics ---------------------*/
 
 // Get the modal
 var modalBlad = document.getElementById("blad");
 
 // Get the button that opens the modal
 var btnBlad = document.getElementById("btnBlad");
+var imgBlad = document.getElementById("imgBlad");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[8];
 
 // When the user clicks on the button, open the modal
-btnBlad.onclick = function() {
-  modalBlad.style.display = "block";
+function myFunctionMotion(x) {
+  if (x.matches) { // If media query matches
+    btnBlad.onclick = function() {
+      modalBlad.style.display = "block";
+    };
+  } else {
+    imgBlad.onclick = function() {
+      modalBlad.style.display = "block";
+    };
+  }
 }
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunctionMotion(x) // Call listener function at run time
+x.addListener(myFunctionMotion) // Attach listener function on state changes
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
